@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-  // --- 1. Get User Input ---
+  // --- Get User Input ---
   int numDays;
   cout << "Enter the number of days: ";
   cin >> numDays;
@@ -27,24 +27,21 @@ int main()
     cin >> sales[i];
   }
 
-  // --- 2. Initialize Tracking Variables ---
   int maxSale = sales[0];
   int minSale = sales[0];
   int maxDay = 1;
   int minDay = 1;
-  double totalSales = 0.0; // Use double for accurate average calculation
+  double totalSales = 0.0;
 
-  // --- 3. Process the Data in a Single Loop ---
+  // --- Process the Data in a Single Loop ---
   for (int i = 0; i < numDays; i++)
   {
     totalSales += sales[i];
-    // If it is, update both maxSale and maxDay.
     if (sales[i] > maxSale)
     {
       maxSale = sales[i];
       maxDay = i + 1;
     }
-    // If it is, update both minSale and minDay.
     if (sales[i] < minSale)
     {
       minSale = sales[i];
@@ -52,7 +49,7 @@ int main()
     }
   }
 
-  // --- 4. Calculate and Display the Final Report ---
+  // --- Calculate and Display the Final Report ---
   double averageSales = totalSales / numDays;
 
   cout << "\n--- Sales Report ---" << std::endl;
