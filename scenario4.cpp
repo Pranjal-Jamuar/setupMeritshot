@@ -51,7 +51,7 @@ public:
     int extractMin() {
         // Simple error handling for an empty heap
         if (heap.empty()) {
-            std::cerr << "Error: Heap is empty. Cannot extract." << std::endl;
+            cerr << "Error: Heap is empty. Cannot extract." << endl;
             return -1; // Return a sentinel value
         }
 
@@ -97,7 +97,7 @@ int main() {
     cout << "\nThe " << k << " cheapest items are: ";
     for (int i = 0; i < k; ++i) {
         if (!minHeap.isEmpty()) {
-            std::cout << minHeap.extractMin() << " ";
+            cout << minHeap.extractMin() << " ";
         }
     }
     cout << endl;
