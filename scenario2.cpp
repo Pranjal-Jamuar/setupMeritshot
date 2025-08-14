@@ -23,7 +23,7 @@ void selectionSort(vector<int>& marks) {
 }
 
 int main() {
-    // --- Get User Input ---
+    // User Input
     int numStudents;
     cout << "Enter the number of students: ";
     cin >> numStudents;
@@ -47,7 +47,7 @@ int main() {
     return 0;
 }
 
-// --- Explanation of Approach ---
+// My Approach
 // I implemented the Selection Sort algorithm to sort the marks in descending order.
 // The code iterates through the array, finding the largest remaining element in each pass
 // and swapping it into its correct position. This is done in-place and without

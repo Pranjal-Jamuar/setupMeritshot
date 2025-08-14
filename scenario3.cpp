@@ -39,7 +39,7 @@ void rotate(vector<int>& nums, int k) {
 }
 
 int main() {
-    // --- Get User Input ---
+    // User Input
     int n;
     cout << "Enter the size of the array: ";
     cin >> n;
@@ -54,7 +54,7 @@ int main() {
     cout << "Enter the number of positions to rotate left: ";
     cin >> k;
 
-    // --- Print Original Array ---
+    // Print Original Array
     cout << "\n Original array: ";
     // Range based for loop
     for (int num : nums) {
@@ -62,7 +62,7 @@ int main() {
     }
     cout << endl;
 
-    // --- Rotate and Print Result ---
+    // Rotate and Print Result
     rotate(nums, k);
 
     cout << "Array after rotating by " << k << ": ";
@@ -74,8 +74,8 @@ int main() {
     return 0;
 }
 
-// --- Explanation of Approach ---
-// My approach uses the Reversal Algorithm, which is highly efficient for this problem.
+// My Approach
+// This approach uses the Reversal Algorithm, which is highly efficient for this problem.
 // It achieves the rotation in O(n) time and O(1) space by performing three
 // in-place reversals on different segments of the array. This method avoids the high
 // time complexity of one-by-one rotations and the high space complexity of using a temporary array.

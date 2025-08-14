@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-  // --- Get User Input ---
+  // User Input
   int numDays;
   cout << "Enter the number of days: ";
   cin >> numDays;
@@ -33,7 +33,7 @@ int main()
   int minDay = 1;
   double totalSales = 0.0;
 
-  // --- Process the Data in a Single Loop ---
+  // Looping the data
   for (int i = 0; i < numDays; i++)
   {
     totalSales += sales[i];
@@ -49,7 +49,7 @@ int main()
     }
   }
 
-  // --- Calculate and Display the Final Report ---
+  // Displaying the Final Report
   double averageSales = totalSales / numDays;
 
   cout << "\n--- Sales Report ---" << std::endl;
@@ -60,8 +60,8 @@ int main()
   return 0;
 }
 
-// --- Explanation of Approach ---
-// My approach uses a single loop to iterate through the daily sales array efficiently.
+// My Approach
+// This approach uses a single loop to iterate through the daily sales array efficiently.
 // I initialize max and min sales with the first day's value. Inside the loop,
 // I update these values if a new max or min is found and also keep a running sum of total sales.
 // After the loop, I calculate the average and print all the results.
