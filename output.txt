@@ -1,1 +1,6 @@
-Hey 20
+Enter the number of days: Enter the sales for each day, separated by spaces: 
+
+--- Sales Report ---
+Maximum Sale: 0 on Day 1
+Minimum Sale: 0 on Day 1
+Average Sale: 0.00
