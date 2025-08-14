@@ -15,7 +15,7 @@ void selectionSort(vector<int>& marks) {
         for (int j = i + 1; j < n; j++)
             if (marks[j] > marks[maxIndex]) maxIndex = j;
 
-
+        // Swapping the values using a temporary variable
         int temp = marks[i];
         marks[i] = marks[maxIndex];
         marks[maxIndex] = temp;
@@ -23,6 +23,7 @@ void selectionSort(vector<int>& marks) {
 }
 
 int main() {
+    // --- Get User Input ---
     int numStudents;
     cout << "Enter the number of students: ";
     cin >> numStudents;
@@ -33,8 +34,10 @@ int main() {
         cin >> marks[i];
     }
 
+    // Calling the selectionSort function
     selectionSort(marks);
 
+    // Providing the marks in descending order as the output
     cout << "\nSorted marks (descending order):" << endl;
     for (int i = 0; i < numStudents; i++) {
         cout << marks[i] << " ";
