@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include <string>
-#include <vector>
 using namespace std;
 
 const int MAX_CAPACITY = 100; // Define a max capacity for our array-based stack
